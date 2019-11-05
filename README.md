@@ -1,6 +1,6 @@
 # HBSIS/Ambev .NET Dojo
 
-HBSIS/AmBev Dojo base projects for .NET.
+HBSIS/AmBev Dojo exercises for .NET.
 
 &#9898; [White Belt](solutions/WhiteBelt) - Plain Unit Tests
 
