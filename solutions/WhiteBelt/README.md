@@ -12,5 +12,6 @@ Unit tests without mocks.
 ## Testing
 
 ```s
+dotnet restore
 dotnet test
 ```
