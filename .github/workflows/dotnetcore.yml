@@ -1,6 +1,9 @@
 name: dotnetcore
 
-on: [push]
+on:
+  push:
+    paths-ignore:
+    - '**.md'
 
 env:
   DOTNET_VERSION: 3.0.100
