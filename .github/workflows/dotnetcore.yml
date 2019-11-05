@@ -2,17 +2,43 @@ name: dotnetcore
 
 on: [push]
 
+env:
+  DOTNET_VERSION: 3.0.100
+
 jobs:
-  build:
-
+  build-linux:
+    name: Ubuntu
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.0.100
+        dotnet-version: $DOTNET_VERSION
+    - name: Build with dotnet
+      run: dotnet build --configuration Release
+      working-directory: solutions/WhiteBelt
+  build-windows:
+    name: Windows
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: $DOTNET_VERSION
+    - name: Build with dotnet
+      run: dotnet build --configuration Release
+      working-directory: solutions/WhiteBelt
+  build-ios:
+    name: macOS
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: $DOTNET_VERSION
     - name: Build with dotnet
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
