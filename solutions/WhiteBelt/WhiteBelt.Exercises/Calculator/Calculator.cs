@@ -1,4 +1,4 @@
-namespace WhiteBelt.Exercises
+namespace WhiteBelt.Exercises.Calculator
 {
     public class Calculator
     {

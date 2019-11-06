@@ -1,11 +1,12 @@
 using System;
 using Xunit;
 
-namespace WhiteBelt.Exercises.Tests
+namespace WhiteBelt.Exercises.Calculator.Tests
 {
     public class CalculatorTest
     {
         private Calculator _calculator;
+
         public CalculatorTest()
         {
             _calculator = new Calculator();
@@ -14,7 +15,7 @@ namespace WhiteBelt.Exercises.Tests
         [Fact]
         public void Add()
         {
-            Assert.True(false, "Test not implemented");
+            Assert.True(false, "Test not implemented!");
         }
     }
 }
