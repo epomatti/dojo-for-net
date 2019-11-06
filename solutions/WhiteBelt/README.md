@@ -4,6 +4,12 @@ Unit tests without mocks.
 
 ## Exercises
 
+Add FluentAssertions dependency:
+
+```s
+dotnet add package FluentAssertions
+```
+
 ### Calculator
 
 1. Create `Calculator.Add()` unit tests
