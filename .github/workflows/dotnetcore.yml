@@ -1,6 +1,9 @@
 name: dotnetcore
 
-on: [push]
+on:
+  push:
+    paths-ignore:
+    - '**.md'
 
 env:
   DOTNET_VERSION: 3.0.100
@@ -14,7 +17,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: $DOTNET_VERSION
+        dotnet-version: 3.0.100
     - name: Build with dotnet
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
@@ -26,7 +29,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: $DOTNET_VERSION
+        dotnet-version: 3.0.100
     - name: Build with dotnet
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
@@ -38,7 +41,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: $DOTNET_VERSION
+        dotnet-version: 3.0.100
     - name: Build with dotnet
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
