@@ -10,6 +10,10 @@ HBSIS/AmBev Dojo exercises for .NET.
 
 :large_orange_diamond: [Yellow Belt](solutions/YellowBelt) - Mocked Unit Tests
 
+:green_book: [Green Belt](solutions/GreenBelt) - Integration Testing
+
+:large_blue_circle: [Blue Belt](solutions/BlueBelt) - Real Scenario
+
 ## Environment
 
 * Works on Linux, Windows and MacOS
