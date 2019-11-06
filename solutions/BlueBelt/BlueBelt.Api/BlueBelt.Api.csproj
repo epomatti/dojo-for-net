@@ -8,4 +8,9 @@
     <ProjectReference Include="..\BlueBelt.Service\BlueBelt.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EasyNetQ" Version="3.7.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.2" />
+  </ItemGroup>
+
 </Project>
