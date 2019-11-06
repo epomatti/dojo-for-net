@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlueBelt.Service\BlueBelt.Service.csproj" />
   </ItemGroup>
 
 </Project>
