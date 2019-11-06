@@ -2,13 +2,16 @@
 
 HBSIS/AmBev Dojo exercises for .NET.
 
-Required .NET Core SDK: `3.0.100`
-
 [![Actions Status](https://github.com/evandropomatti/hbsis-dojo-for-net/workflows/dotnetcore/badge.svg)](https://github.com/evandropomatti/hbsis-dojo-for-net/actions)
 
-## Solutions
+## Exercises
 
 :white_circle: [White Belt](solutions/WhiteBelt) - Plain Unit Tests
 
 :large_orange_diamond: [Yellow Belt](solutions/YellowBelt) - Mocked Unit Tests
 
+## Environment
+
+* Supported on Linux, Windows and MacOS
+* Requires .NET Core SDK `3.0.100` or superior
+* User your favorite IDE
