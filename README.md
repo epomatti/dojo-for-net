@@ -17,5 +17,5 @@ HBSIS/AmBev Dojo exercises for .NET.
 ## Environment
 
 * Works on Linux, Windows and MacOS
-* Requires .NET Core SDK 3.0.100 or superior
+* Requires .NET Core SDK `3.0.100` or superior
 * User your favorite IDE
