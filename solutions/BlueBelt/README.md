@@ -2,7 +2,7 @@
 
 Solve and test the issues of this project without configuring your local environment.
 
-<img src="docs/solution.png" width=400/>
+<img src="docs/solution.png" width=500/>
 
 ## Setup
 
