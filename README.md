@@ -1,6 +1,6 @@
-# HBSIS/Ambev .NET Dojo
+# .NET Core Dojo
 
-HBSIS/AmBev Dojo exercises for .NET.
+Dojo exercises for .NET.
 
 [![Actions Status](https://github.com/evandropomatti/hbsis-dojo-for-net/workflows/dotnetcore/badge.svg)](https://github.com/evandropomatti/hbsis-dojo-for-net/actions)
 
