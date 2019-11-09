@@ -1,6 +1,6 @@
 # .NET Core Dojo
 
-Dojo exercises for .NET.
+Dojo exercises for .NET Core.
 
 [![Actions Status](https://github.com/evandropomatti/hbsis-dojo-for-net/workflows/dotnetcore/badge.svg)](https://github.com/evandropomatti/hbsis-dojo-for-net/actions)
 
