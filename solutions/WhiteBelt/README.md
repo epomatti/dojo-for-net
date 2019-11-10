@@ -21,3 +21,13 @@ dotnet add package FluentAssertions
 dotnet restore
 dotnet test
 ```
+
+## Tips
+
+```cs
+using FluentAssertions;
+Assert.AreEqual(expected, actual);
+actual.Should().Be(expected);
+[Theory]
+[InlineData(value)]
+```
