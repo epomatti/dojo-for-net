@@ -12,7 +12,9 @@ Dojo exercises for .NET Core.
 
 :green_book: [Green Belt](solutions/GreenBelt) - Integration Testing
 
-:large_blue_circle: [Blue Belt](solutions/BlueBelt) - Real Scenario
+:large_blue_circle: [Blue Belt](solutions/BlueBelt) - Real Scenario.
+
+:red_circle: [Red_Belt](solutions/RedBelt) - Acceptance test using Specflow.
 
 ## Environment
 
