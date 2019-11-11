@@ -55,35 +55,7 @@ namespace Books
         [Fact]
         public void Reserve_updates_to_database()
         {
-
-            var options = new DbContextOptionsBuilder<BookContext>()
-                .UseInMemoryDatabase(databaseName: "Reserve_updates_to_database")
-                .Options;
-
-            using (var context = new BookContext(options))
-            {
-                
-                // ARRANGE
-                Book book = new Book
-                {
-                    Name = "Clean Code",
-                    Author = "Robert C. Martin",
-                    Reserved = false
-                };
-
-                context.Books.Add(book);
-                context.SaveChanges();
-
-                // ACT
-                var service = new BookService(context);
-                service.Reserve(book.Id);
-
-                // ASSERT
-                Book result = context.Books
-                                     .Where(b => b.Id == book.Id)
-                                     .Single();
-                Assert.True(result.Reserved);
-            }
+            Assert.True(false, "Test is not implemented");
         }
     }
 }
