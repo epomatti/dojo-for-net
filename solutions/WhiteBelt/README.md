@@ -25,9 +25,12 @@ dotnet test
 ## Tips
 
 ```cs
+// import
 using FluentAssertions;
+// assertions
 Assert.AreEqual(expected, actual);
 actual.Should().Be(expected);
+// multiple values
 [Theory]
 [InlineData(value)]
 ```
