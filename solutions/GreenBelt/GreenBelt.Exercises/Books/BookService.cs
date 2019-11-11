@@ -13,16 +13,18 @@ namespace Books
             _context = context;
         }
 
-        public void Add(string name)
+        public Book Add(string name, string author)
         {
-            var blog = new Book
+            var book = new Book
             {
-                Id = Guid.NewGuid(),
                 Name = name,
+                Author = author,
                 Reserved = false
             };
-            _context.Books.Add(blog);
+            _context.Books.Add(book);
             _context.SaveChanges();
+            
+            return book;
         }
 
         public IEnumerable<Book> Find(string term)
