@@ -23,7 +23,7 @@ namespace Books
             };
             _context.Books.Add(book);
             _context.SaveChanges();
-            
+
             return book;
         }
 
@@ -39,7 +39,8 @@ namespace Books
         {
             _context.Books
                 .Where(b => b.Id == id)
-                .ToList().ForEach(b => b.Reserved = true);
+                .ToList()
+                .ForEach(b => b.Reserved = true);
         }
     }
 }
