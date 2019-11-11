@@ -14,7 +14,7 @@ Dojo exercises for .NET Core.
 
 :large_blue_circle: [Blue Belt](solutions/BlueBelt) - Real Scenario.
 
-:red_circle: [Red_Belt](solutions/RedBelt) - Acceptance test using Specflow.
+:red_circle: [Red Belt](solutions/RedBelt) - Acceptance test using Specflow.
 
 ## Environment
 
