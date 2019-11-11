@@ -26,3 +26,16 @@ dotnet add package FluentAssertions
 dotnet restore
 dotnet test
 ```
+
+## Tips
+
+```cs
+// import
+using NSubstitute;
+// Mock Class
+Substitute.For<Class>();
+// Set behavior
+mock.someMethod(arg).Returns(actual);
+// Verify
+mock.Received().someMethod(arg);
+```
