@@ -18,9 +18,21 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.0.100
-    - name: Build with dotnet
+    - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
+    - name: Build with dotnet - Yellow
+      run: dotnet build --configuration Release
+      working-directory: solutions/YellowBelt
+    - name: Build with dotnet - Green
+      run: dotnet build --configuration Release
+      working-directory: solutions/GreenBelt
+    - name: Build with dotnet - Blue
+      run: dotnet build --configuration Release
+      working-directory: solutions/BlueBelt
+    - name: Build with dotnet - Red
+      run: dotnet build --configuration Release
+      working-directory: solutions/RedBelt
   build-windows:
     name: Windows
     runs-on: windows-latest
@@ -30,9 +42,21 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.0.100
-    - name: Build with dotnet
+    - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
+    - name: Build with dotnet - Yellow
+      run: dotnet build --configuration Release
+      working-directory: solutions/YellowBelt
+    - name: Build with dotnet - Green
+      run: dotnet build --configuration Release
+      working-directory: solutions/GreenBelt
+    - name: Build with dotnet - Blue
+      run: dotnet build --configuration Release
+      working-directory: solutions/BlueBelt
+    - name: Build with dotnet - Red
+      run: dotnet build --configuration Release
+      working-directory: solutions/RedBelt
   build-ios:
     name: macOS
     runs-on: macOS-latest
@@ -42,6 +66,18 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.0.100
-    - name: Build with dotnet
+    - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
+    - name: Build with dotnet - Yellow
+      run: dotnet build --configuration Release
+      working-directory: solutions/YellowBelt
+    - name: Build with dotnet - Green
+      run: dotnet build --configuration Release
+      working-directory: solutions/GreenBelt
+    - name: Build with dotnet - Blue
+      run: dotnet build --configuration Release
+      working-directory: solutions/BlueBelt
+    - name: Build with dotnet - Red
+      run: dotnet build --configuration Release
+      working-directory: solutions/RedBelt
