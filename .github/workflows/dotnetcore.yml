@@ -30,9 +30,6 @@ jobs:
     - name: Build with dotnet - Blue
       run: dotnet build --configuration Release
       working-directory: solutions/BlueBelt
-    - name: Build with dotnet - Red
-      run: dotnet build --configuration Release
-      working-directory: solutions/RedBelt
   build-windows:
     name: Windows
     runs-on: windows-latest
@@ -54,9 +51,6 @@ jobs:
     - name: Build with dotnet - Blue
       run: dotnet build --configuration Release
       working-directory: solutions/BlueBelt
-    - name: Build with dotnet - Red
-      run: dotnet build --configuration Release
-      working-directory: solutions/RedBelt
   build-ios:
     name: macOS
     runs-on: macOS-latest
@@ -78,6 +72,3 @@ jobs:
     - name: Build with dotnet - Blue
       run: dotnet build --configuration Release
       working-directory: solutions/BlueBelt
-    - name: Build with dotnet - Red
-      run: dotnet build --configuration Release
-      working-directory: solutions/RedBelt
