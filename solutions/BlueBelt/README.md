@@ -20,3 +20,12 @@ Solve and test the issues of this project without configuring your local environ
 dotnet restore
 dotnet test
 ```
+
+### Integrated
+
+**RabbitMQ**
+
+```s
+# Management user/pass is "guest/guest"
+sudo docker run -d --hostname dojo-rabbit --name dojo-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+```

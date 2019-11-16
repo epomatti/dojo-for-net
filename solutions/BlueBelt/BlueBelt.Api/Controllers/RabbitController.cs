@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using EasyNetQ;
+using Dojo;
 
 namespace BlueBelt.Api.Controllers
 {
@@ -12,14 +13,17 @@ namespace BlueBelt.Api.Controllers
     [Route("[controller]")]
     public class RabbitController : ControllerBase
     {
-        [HttpGet]
-        public void Get()
+        IBus _bus;
+
+        public RabbitController(IBus bus)
         {
-            using (var bus = RabbitHutch.CreateBus("host=localhost"))
-            {
-                bus.Publish("message");
-                bus.Subscribe<String>("my_subscription_id", msg => Console.WriteLine(msg));
-            }
+            _bus = bus;
+        }
+
+        [HttpGet]
+        public void Get([FromQuery] string text)
+        {
+            _bus.Send("dojo", new DojoMessage { Text = text });
         }
     }
 }
