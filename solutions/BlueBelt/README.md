@@ -9,10 +9,11 @@ Solve and test the issues of this project without configuring your local environ
 1. Create a test project
 2. Add your favorite test technologies
 
-## Issues
+## Exercise
 
-- Find and solve the problem in CPF validation
-- Find and solve the problem in data persistence
+Error reports show many invalid CPFs received from ther 3rd party.
+
+Validate the CPF format using unit testing, and if invalid, record it to an error handling table instead of saving the Invoice.
 
 ## Testing
 
