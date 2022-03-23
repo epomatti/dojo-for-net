@@ -6,18 +6,18 @@ on:
     - '**.md'
 
 env:
-  DOTNET_VERSION: 6.0.3
+  DOTNET_VERSION: 6.0.x
 
 jobs:
   build-linux:
     name: Ubuntu
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@2
       with:
-        dotnet-version: 6.0.3
+        dotnet-version: 6.0.x
     - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
@@ -34,11 +34,11 @@ jobs:
     name: Windows
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 6.0.3
+        dotnet-version: '6.0.x'
     - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
@@ -55,11 +55,11 @@ jobs:
     name: macOS
     runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 6.0.3
+        dotnet-version: '6.0.x'
     - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
