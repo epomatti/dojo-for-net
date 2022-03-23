@@ -6,18 +6,18 @@ Dojo exercises for .NET Core.
 
 ## Exercises
 
-:white_circle: [White Belt](solutions/WhiteBelt) - Plain Unit Tests
+Each module is kept separate for each day of the course:
 
-:large_orange_diamond: [Yellow Belt](solutions/YellowBelt) - Mocked Unit Tests
+⚪ [White Belt](solutions/WhiteBelt) - Plain Unit Tests
 
-:green_book: [Green Belt](solutions/GreenBelt) - Integration Testing
+🟡 [Yellow Belt](solutions/YellowBelt) - Mocked Unit Tests
 
-:large_blue_circle: [Blue Belt](solutions/BlueBelt) - Real Scenario.
+🟢 [Green Belt](solutions/GreenBelt) - Integration Testing
 
-:red_circle: [Red Belt](solutions/RedBelt) - Acceptance test using Specflow.
+🔵 [Blue Belt](solutions/BlueBelt) - Real Scenario.
 
-## Environment
+🔴 [Red Belt](solutions/RedBelt) - Acceptance test using Specflow.
 
-* Works on Linux, Windows and MacOS
-* Requires .NET Core SDK `3.0.100` or superior
-* User your favorite IDE
+<hr>
+
+Upgraded to `.NET Core 6`

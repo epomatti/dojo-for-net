@@ -6,7 +6,7 @@ Unit tests without mocks.
 
 Add FluentAssertions dependency:
 
-```s
+```shell
 dotnet add package FluentAssertions
 ```
 
@@ -17,7 +17,7 @@ dotnet add package FluentAssertions
 
 ## Testing
 
-```s
+```shell
 dotnet restore
 dotnet test
 ```
@@ -33,4 +33,10 @@ actual.Should().Be(expected);
 // multiple values
 [Theory]
 [InlineData(value)]
+```
+
+## Sources
+
+```
+https://xunit.net/docs/getting-started/netcore/cmdline
 ```
