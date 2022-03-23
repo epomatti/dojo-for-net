@@ -14,9 +14,9 @@ Each module is kept separate for each day of the course:
 
 🟢 [Green Belt](solutions/GreenBelt) - Integration Testing
 
-🔵 [Blue Belt](solutions/BlueBelt) - Real Scenario.
+🔵 [Blue Belt](solutions/BlueBelt) - Real Scenario
 
-🔴 [Red Belt](solutions/RedBelt) - Acceptance test using Specflow.
+🔴 [Red Belt](solutions/RedBelt) - Acceptance tests using Specflow.
 
 <hr>
 
