@@ -6,7 +6,7 @@ on:
     - '**.md'
 
 env:
-  DOTNET_VERSION: 3.0.100
+  DOTNET_VERSION: 6.0.3
 
 jobs:
   build-linux:
@@ -17,7 +17,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.0.100
+        dotnet-version: 6.0.3
     - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
@@ -38,7 +38,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.0.100
+        dotnet-version: 6.0.3
     - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
@@ -59,7 +59,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.0.100
+        dotnet-version: 6.0.3
     - name: Build with dotnet - White
       run: dotnet build --configuration Release
       working-directory: solutions/WhiteBelt
