@@ -54,7 +54,7 @@ namespace Books
     [Fact]
     public void Reserve_updates_to_database()
     {
-      // TODO: Implement
+      Assert.True(false, "Test is not implemented");
     }
   }
 }

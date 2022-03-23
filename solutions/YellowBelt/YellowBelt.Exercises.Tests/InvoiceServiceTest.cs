@@ -16,7 +16,7 @@ namespace YellowBelt.Exercises.Tests
         [Fact]
         public void GetInvoiceTotalValue()
         {
-            // TODO: Implement
+            Assert.True(false, "Test is not implemented");
         }
     }
 }
