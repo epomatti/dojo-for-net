@@ -14,7 +14,7 @@ namespace WhiteBelt.Exercises.Calculator.Tests
         [Fact]
         public void Add()
         {
-            Assert.True(false, "Test not implemented!");
+            // TODO: Implement
         }
     }
 }
